@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Setup Guide &mdash; OTC-TCS Documentation Template 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon-48x48.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Documentation Generation Guide" href="docbuild.html" />
+    <link rel="prev" title="Work in Progress" href="../tech/placeholder.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> OTC-TCS Documentation Template
+          
+
+          
+            
+            <img src="../../_static/logo_white_200w.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction to the Documentation Template Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">How-Tos</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#technical-notes">Technical Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tech/pandocs-conversion.html">Pandocs Conversion Tutorial</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tech/pandocs-conversion.html#scope">Scope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tech/pandocs-conversion.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tech/pandocs-conversion.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tech/pandocs-conversion.html#single-file-conversion">Single file Conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tech/pandocs-conversion.html#multiple-file-conversion-using-pandoc">Multiple file Conversion using Pandoc</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tech/placeholder.html">Work in Progress</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#process-notes">Process Notes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Template Setup Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setup-steps">Setup Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docbuild.html">Documentation Generation Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docbuild.html#documentation-overview">Documentation overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docbuild.html#set-up-the-documentation-working-folders">Set up the documentation working folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docbuild.html#installing-the-documentation-tools">Installing the documentation tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docbuild.html#documentation-presentation-theme">Documentation presentation theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docbuild.html#running-the-documentation-processors">Running the documentation processors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docbuild.html#publishing-content">Publishing content</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="set-up-ubuntu-on-windows.html">Set up Ubuntu on Windows for Sphinx development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="set-up-ubuntu-on-windows.html#install-the-windows-subsystem-for-linux">Install the Windows Subsystem for Linux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="set-up-ubuntu-on-windows.html#configure-your-ubuntu-distro-for-the-proxy">Configure your Ubuntu distro for the proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="set-up-ubuntu-on-windows.html#set-up-your-ssh-key">Set up your ssh key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="set-up-ubuntu-on-windows.html#install-dependencies">Install dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="set-up-ubuntu-on-windows.html#some-rules">Some Rules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contributing to the Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute/contribute_guidelines.html">Contribution Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/contribute_guidelines.html#licensing">Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/contribute_guidelines.html#developer-certification-of-origin-dco">Developer Certification of Origin (DCO)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/contribute_guidelines.html#dco-sign-off-methods">DCO Sign-Off Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/contribute_guidelines.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute/doc_guidelines.html">Documentation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#headings">Headings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#content-highlighting">Content Highlighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#lists">Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#multi-column-lists">Multi-column lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#file-names-and-commands">File names and Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#internal-cross-reference-linking">Internal Cross-Reference Linking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#non-ascii-characters">Non-ASCII Characters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#code-and-command-examples">Code and Command Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/doc_guidelines.html#tabs-spaces-and-indenting">Tabs, spaces, and indenting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OTC-TCS Documentation Template</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">How-Tos</a> &raquo;</li>
+        
+      <li>Template Setup Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-setup-guide">
+<span id="guide"></span><h1>Template Setup Guide<a class="headerlink" href="#template-setup-guide" title="Permalink to this headline">¶</a></h1>
+<p>Follow the instructions below to go from nothing to a robust documentation
+framework hosted on GitHub, including an existing workflow for managing
+community contributions that can scale with your project.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This documentation project is built on Sphinx, which relies on Python and
+reStructuredText. It uses files and directories for content and strucutre to
+generate a static HTML website. reStructuredText is a highly readable markup
+language with powerful organizational and layout capabilities.</p>
+<p>Deploying this template for your Open Source project works best in a Linux
+based operating system, though it can be done from Windows with a little
+additional effort. At the very least, you will need a basic knowledge of Git
+and the bash command line. You can find an introduction to Git and the
+GitHub workflow in our <a class="reference internal" href="docbuild.html#doc-gen"><span class="std std-ref">Documentation Generation Guide</span></a>.</p>
+<p>This guide assumes that you have already received approval for your Open
+Source project and that your Intel sponsored GitHub project exists. If not,
+please see the prework below.</p>
+<div class="section" id="prework">
+<h3>Prework<a class="headerlink" href="#prework" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Open source approval process:
+<a class="reference external" href="https://opensource.intel.com/how-to/open-source-approval-process">https://opensource.intel.com/how-to/open-source-approval-process</a></li>
+<li>Open source whitelist process:
+<a class="reference external" href="https://opensource.intel.com/how-to/open-source-whitelist-process">https://opensource.intel.com/how-to/open-source-whitelist-process</a></li>
+<li>Open source development model:
+<a class="reference external" href="https://opensource.intel.com/how-to/open-source-intel-open-source-development-model">https://opensource.intel.com/how-to/open-source-intel-open-source-development-model</a></li>
+<li>Request a GitHub project under Intel sponsorship:
+<a class="reference external" href="https://opensource.intel.com/how-to/otc-infrastructure/github">https://opensource.intel.com/how-to/otc-infrastructure/github</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="setup-steps">
+<h2>Setup Steps<a class="headerlink" href="#setup-steps" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Set up a GitHub.com documentation repository.</p>
+</li>
+<li><p class="first">Retrieve the document template as a zip file from <a class="reference external" href="https://github.intel.com/otc-tcs/documentation-template">https://github.intel.com/otc-tcs/documentation-template</a>.</p>
+</li>
+<li><p class="first">Extract document template to a directory and push it to your GitHub.com
+documenation repository: <a class="reference external" href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/</a>.</p>
+</li>
+<li><p class="first">Create a directory called <code class="docutils literal notranslate"><span class="pre">website</span></code> at the same level where the repo
+was extracted. This will be the target for the <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">publish</span></code> command
+later. The final directory structure should look like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;projectname&gt;/
+   doc-repo
+   website
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set up a GitHub pages repository for your organization
+called <code class="docutils literal notranslate"><span class="pre">&lt;projectname&gt;.github.io</span></code>. Add a file called <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code>
+to top level of your GitHub pages repo rather than <code class="docutils literal notranslate"><span class="pre">README.md</span></code> to make
+sure HTML is rendered correctly.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> the GitHub pages repository to your <code class="docutils literal notranslate"><span class="pre">website</span></code> directory.</p>
+</li>
+<li><p class="first">Make sure the master branch of the github.io repo has github pages
+publishing enabled. There can be only one.</p>
+</li>
+<li><p class="first">For building and deployment instrucions go to our <a class="reference internal" href="docbuild.html#doc-gen"><span class="std std-ref">Documentation Generation Guide</span></a>.</p>
+</li>
+<li><p class="first">TOC trees need to be in the index.rst at each level to define the
+site structure. For example, this is the TOC tree used to generate
+this site:</p>
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:maxdepth:</span> <span class="nf">1</span>
+
+   introduction/index.rst
+   getting_started/index.rst
+   release_notes.rst
+   howtos/index.rst
+   contribute/index.rst
+</pre></div>
+</div>
+</li>
+<li><p class="first">Changes to theme can be made by editing <code class="docutils literal notranslate"><span class="pre">static/custom.css</span></code>.</p>
+</li>
+<li><p class="first">No matter where the images are before the build, after the build all the
+images are collected in one directory: all the image filenames must be
+unique.</p>
+</li>
+<li><p class="first">Modify <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> to reflect your project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># General information about the project.</span>
+<span class="nv">project</span> <span class="o">=</span> u<span class="s1">&#39;&lt;project name&gt;&#39;</span>
+<span class="nv">copyright</span> <span class="o">=</span> u<span class="s1">&#39;&lt;year&gt;, &lt;project name&gt;&#39;</span>
+<span class="nv">author</span> <span class="o">=</span> u<span class="s1">&#39;&lt;project name&gt; developers&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Modify <code class="docutils literal notranslate"><span class="pre">substitutions.txt</span></code> to reflect your project:</p>
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|PN|</span> <span class="ow">replace</span><span class="p">::</span> <span class="nt">&lt;project name&gt;</span>
+
+<span class="p">..</span> <span class="nt">|LPN|</span> <span class="ow">replace</span><span class="p">::</span> <span class="nt">&lt;long project name&gt;</span>
+
+<span class="p">..</span> <span class="nt">_project repo:</span> https://github.com/&lt;projectname&gt;/
+
+<span class="p">..</span> <span class="nt">_documentation repo:</span> https://github.com/&lt;proejctname&gt;/&lt;docrepo&gt;
+
+<span class="p">..</span> <span class="nt">_documentation site:</span> https://&lt;projectname&gt;.github.io
+
+<span class="p">..</span> <span class="nt">_project website:</span> https://github.intel.com/pages/otc-tcs
+</pre></div>
+</div>
+</li>
+<li><p class="first">Edit <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> to reflect your project name and requirements</p>
+</li>
+<li><p class="first">Make any edits to <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> that might be needed to facilitate the
+build or change the name of your local instantiation of the github.io
+website repository directory.</p>
+</li>
+<li><p class="first">Replace logos and favicon in <code class="docutils literal notranslate"><span class="pre">/images</span></code> with your project logos</p>
+</li>
+<li><p class="first">Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> to remove any previously generated HTML.</p>
+</li>
+<li><p class="first">Regenerate the HTML with Sphinx with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>.</p>
+</li>
+<li><p class="first">Push the updated content to the github.io repo with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">publish</span></code>.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, OTC-TCS Documentation Template.
+      Last updated on Jul 24, 2018.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
