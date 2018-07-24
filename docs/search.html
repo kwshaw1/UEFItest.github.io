@@ -154,6 +154,449 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#list-of-figures">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#list-of-tables">List of Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#introduction">1 Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#overview">1.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#organization-of-the-pei-cis">1.2 Organization of the PEI CIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#conventions-used-in-this-document">1.3 Conventions Used in this Document</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#data-structure-descriptions">1.3.1 Data Structure Descriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#procedure-descriptions">1.3.2 Procedure Descriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#instruction-descriptions">1.3.3 Instruction Descriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ppi-descriptions">1.3.4 PPI Descriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#pseudo-code-conventions">1.3.5 Pseudo-Code Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#typographic-conventions">1.3.6 Typographic Conventions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#requirements">1.4 Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id11">1.5 Conventions used in this document</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#number-formats">1.5.1 Number formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#binary-prefixes">1.5.2 Binary prefixes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#id28">2 Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id29">2.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#design-goals">2.2 Design Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pre-efi-initialization-pei-phase">2.3 Pre-EFI Initialization (PEI) Phase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-services">2.4 PEI Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-foundation">2.5 PEI Foundation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-dispatcher">2.6 PEI Dispatcher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pre-efi-initialization-modules-peims">2.7 Pre-EFI Initialization Modules (PEIMs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#peim-to-peim-interfaces-ppis">2.8 PEIM-to-PEIM Interfaces (PPIs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#firmware-volumes">2.9 Firmware Volumes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#pei-services-table">3 PEI Services Table</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id30">3.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id31">3.2 PEI Services Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-services">3.2.1 EFI_PEI_SERVICES</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#services-pei">4 Services - PEI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id68">4.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#ppi-services">4.2 PPI Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#installppi">InstallPpi()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#reinstallppi">ReinstallPpi()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#locateppi">LocatePpi()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#notifyppi">NotifyPpi()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#boot-mode-services">4.3 Boot Mode Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#getbootmode">GetBootMode()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#setbootmode">SetBootMode()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#hob-services">4.4 HOB Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#gethoblist">GetHobList()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#createhob">CreateHob()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#firmware-volume-services">4.5 Firmware Volume Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsfindnextvolume">FfsFindNextVolume()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsfindnextfile">FfsFindNextFile()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsfindsectiondata">FfsFindSectionData()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsfindsectiondata3">FfsFindSectionData3()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsfindfilebyname">FfsFindFileByName()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsgetfileinfo">FfsGetFileInfo()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsgetfileinfo2">FfsGetFileInfo2()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#ffsgetvolumeinfo">FfsGetVolumeInfo()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#registerforshadow">RegisterForShadow()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-memory-services">4.6 PEI Memory Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#installpeimemory">InstallPeiMemory()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#allocatepages">AllocatePages()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#allocatepool">AllocatePool()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#copymem">CopyMem()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#freepages">FreePages()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#setmem">SetMem()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#status-code-service">4.7 Status Code Service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#reportstatuscode">ReportStatusCode()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#reset-services">4.8 Reset Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#i-o-and-pci-services">4.9 I/O and PCI Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#id99">5 PEI Foundation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id100">5.1 Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#prerequisites">5.1.1 Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#processor-execution-mode">5.1.2 Processor Execution Mode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#processor-execution-mode-in-ia-32-intel-architecture">5.1.2.1 Processor Execution Mode in IA-32 Intel<sup>®</sup> Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#processor-execution-mode-in-itanium-processor-family">5.1.2.2 Processor Execution Mode in Itanium<sup>®</sup> Processor Family</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#access-to-the-boot-firmware-volume-bfv-and-other-boot-critical-fvs">5.1.2.3 Access to the Boot Firmware Volume (BFV) and other boot-critical FVs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#access-to-the-boot-firmware-volume-in-ia-32-intel-architecture">5.1.2.4 Access to the Boot Firmware Volume in IA-32 Intel Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#access-to-the-boot-firmware-volume-in-itanium-processor-family">5.1.2.5 Access to the Boot Firmware Volume in Itanium Processor Family</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-foundation-entry-point">5.2 PEI Foundation Entry Point</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id101">5.2.1 PEI Foundation Entry Point</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-calling-convention-processor-binding">5.3 PEI Calling Convention Processor Binding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-services-table-retrieval">5.4 PEI Services Table Retrieval</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#x86">5.4.1 X86</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#x64">5.4.2 x64</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#itanium-processor-family-register-mechanism">5.4.3 Itanium Processor Family – Register Mechanism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#arm-processor-family-register-mechanism">5.4.4 ARM Processor Family – Register Mechanism</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#arm-vector-table">5.4.4.1 ARM Vector Table</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#aarch64-processor-family-register-mechanism">5.4.5 AArch64 Processor Family – Register Mechanism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#risc-v-processor-family-register-mechanism">5.4.6 RISC-V Processor Family – Register Mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pei-dispatcher-introduction">5.5 PEI Dispatcher Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#ordering">5.6 Ordering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id110">5.6.1 Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#requirement-representation-and-notation">5.6.2 Requirement Representation and Notation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#pei-a-priori-file-overview">5.6.3 PEI <em>a priori</em> File Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#pei-apriori-file-name-guid">PEI_APRIORI_FILE_NAME_GUID</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#dispatch-behavior">5.6.3.1 Dispatch Behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#firmware-volume-image-files">5.6.4 Firmware Volume Image Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#peim-dependency-expressions">5.6.5 PEIM Dependency Expressions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#types-of-dependencies">5.6.6 Types of Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#dependency-expressions">5.7 Dependency Expressions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id119">5.7.1 Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#dependency-expression-instruction-set">5.7.1.1 Dependency Expression Instruction Set</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#push">PUSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#and">AND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#or">OR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#not">NOT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#true">TRUE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#false">FALSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#end">END</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#dependency-expression-with-no-dependencies">5.7.2 Dependency Expression with No Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#empty-dependency-expressions">5.7.3 Empty Dependency Expressions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#dependency-expression-reverse-polish-notation-rpn">5.7.4 Dependency Expression Reverse Polish Notation (RPN)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#dispatch-algorithm">5.8 Dispatch Algorithm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id134">5.8.1 Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#ordering-algorithm">5.8.1.1 Ordering Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#multiple-firmware-volume-support">5.8.1.2 Multiple Firmware Volume Support</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id135">5.8.2 Requirements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#requirements-of-a-dispatching-algorithm">5.8.2.1 Requirements of a Dispatching Algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#preventing-infinite-loops">5.8.2.3 Preventing Infinite Loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#controlling-processor-register-resources">5.8.2.4 Controlling Processor Register Resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#preserving-proper-dispatch-order">5.8.2.5 Preserving Proper Dispatch Order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#using-available-memory">5.8.2.6 Using Available Memory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#invoking-the-peim-s-entry-point">5.8.2.7 Invoking the PEIM’s Entry Point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#knowing-when-dispatcher-tasks-are-finished">5.8.2.8 Knowing When Dispatcher Tasks Are Finished</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#reporting-pei-core-location">5.8.2.9 Reporting PEI Core Location</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#example-dispatch-algorithm">5.8.3 Example Dispatch Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#dispatching-when-memory-exists">5.8.4 Dispatching When Memory Exists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#peim-dispatching">5.8.5 PEIM Dispatching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#peim-authentication">5.8.6 PEIM Authentication</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#architectural-ppis">6 Architectural PPIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id138">6.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#required-architectural-ppis">6.2 Required Architectural PPIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-master-boot-mode-ppi-required">EFI_PEI_MASTER_BOOT_MODE_PPI (Required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-dxe-ipl-ppi-required">EFI_DXE_IPL_PPI (Required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-dxe-ipl-ppi-entry">EFI_DXE_IPL_PPI.Entry()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-permanent-memory-installed-ppi-required">EFI_PEI_PERMANENT_MEMORY_INSTALLED_PPI (Required)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#optional-architectural-ppis">6.3 Optional Architectural PPIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-boot-in-recovery-mode-ppi-optional">EFI_PEI_BOOT_IN_RECOVERY_MODE_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-end-of-pei-phase-ppi-optional">EFI_PEI_END_OF_PEI_PHASE_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-reset-ppi-optional">EFI_PEI_RESET_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-reset2-ppi-optional">EFI_PEI_RESET2_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#resetsystem">ResetSystem()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-progress-code-ppi-optional">EFI_PEI_PROGRESS_CODE_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-security2-ppi-optional">EFI_PEI_SECURITY2_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-security2-ppi-authenticationstate">EFI_PEI_SECURITY2_PPI.AuthenticationState()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-temporary-ram-support-ppi-optional">EFI_PEI_TEMPORARY_RAM_SUPPORT_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-temporary-ram-support-ppi-temporaryrammigration">EFI_PEI_TEMPORARY_RAM_SUPPORT_PPI.TemporaryRamMigration ()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-temporary-ram-done-ppi-optional">EFI_PEI_TEMPORARY_RAM_DONE_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-temporary-ram-done-ppi-temporaryramdone">EFI_PEI_TEMPORARY_RAM_DONE_PPI.TemporaryRamDone ()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#peims">7 PEIMs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id187">7.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#peim-structure">7.2 PEIM Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#peim-structure-overview">7.2.1 PEIM Structure Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#relocation-information">7.2.2 Relocation Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#position-dependent-code">7.2.2.1 Position-Dependent Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#position-independent-code">7.2.2.2 Position-Independent Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#relocation-information-format">7.2.2.3 Relocation Information Format</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#authentication-information">7.2.3 Authentication Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#peim-invocation-entry-point">7.3 PEIM Invocation Entry Point</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-peim-entry-point2">7.3.1 EFI_PEIM_ENTRY_POINT2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#peim-descriptors">7.4 PEIM Descriptors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#peim-descriptors-overview">7.4.1 PEIM Descriptors Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-descriptor">EFI_PEI_DESCRIPTOR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-notify-descriptor">EFI_PEI_NOTIFY_DESCRIPTOR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-ppi-descriptor">EFI_PEI_PPI_DESCRIPTOR</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#peim-to-peim-communication">7.5 PEIM-to-PEIM Communication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id188">7.5.1 Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#dynamic-ppi-discovery">7.5.2 Dynamic PPI Discovery</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#ppi-database">7.5.2.1 PPI Database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#invoking-a-ppi">7.5.2.2 Invoking a PPI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#address-resolution">7.5.2.3 Address Resolution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#additional-ppis">8 Additional PPIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id189">8.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#required-additional-ppis">8.2 Required Additional PPIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#pci-configuration-ppi-required">8.2.1 PCI Configuration PPI (Required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-pci-cfg2-ppi">EFI_PEI_PCI_CFG2_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-pci-cfg2-ppi-read">EFI_PEI_PCI_CFG2_PPI.Read()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-pci-cfg2-ppi-write">EFI_PEI_PCI_CFG2_PPI.Write()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-pci-cfg2-ppi-modify">EFI_PEI_PCI_CFG2_PPI.Modify()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-stall-ppi-required">EFI_PEI_STALL_PPI (Required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-stall-ppi-stall">EFI_PEI_STALL_PPI.Stall()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-read-only-variable2-ppi">EFI_PEI_READ_ONLY_VARIABLE2_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-read-only-variable2-ppi-getvariable">EFI_PEI_READ_ONLY_VARIABLE2_PPI.GetVariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-read-only-variable2-ppi-nextvariablename">EFI_PEI_READ_ONLY_VARIABLE2_PPI.NextVariableName</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#optional-additional-ppis">8.3 Optional Additional PPIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-sec-platform-information-ppi-optional">EFI_SEC_PLATFORM_INFORMATION_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-sec-platform-information-ppi-platforminformation">EFI_SEC_PLATFORM_INFORMATION_PPI.PlatformInformation()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-sec-platform-information2-ppi-optional">EFI_SEC_PLATFORM_INFORMATION2_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-sec-platform-information2-ppi-platforminformation2">EFI_SEC_PLATFORM_INFORMATION2_PPI.PlatformInformation2()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-loaded-image-ppi">EFI_PEI_LOADED_IMAGE_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-sec-hob-data-ppi">EFI_SEC_HOB_DATA_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-sec-hob-data-ppi-gethobs">EFI_SEC_HOB_DATA_PPI.GetHobs()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#recovery">8.3.4 Recovery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-module-ppi">EFI_PEI_RECOVERY_MODULE_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-module-ppi-loadrecoverycapsule">EFI_PEI_RECOVERY_MODULE_PPI.LoadRecoveryCapsule()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-device-recovery-module-ppi">EFI_PEI_DEVICE_RECOVERY_MODULE_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#getnumberrecoverycapsules">GetNumberRecoveryCapsules()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-device-recovery-module-ppi-getrecoverycapsuleinfo">EFI_PEI_DEVICE_RECOVERY_MODULE_PPI. GetRecoveryCapsuleInfo()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-device-recovery-module-ppi-loadrecoverycapsule">EFI_PEI_DEVICE_RECOVERY_MODULE_PPI. LoadRecoveryCapsule()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#device-recovery-block-i-o-ppi">8.3.4.3 Device Recovery Block I/O PPI</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io-ppi">EFI_PEI_RECOVERY_BLOCK_IO_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io-ppi-getnumberofblockdevices">EFI_PEI_RECOVERY_BLOCK_IO_PPI. GetNumberOfBlockDevices()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io-ppi-getblockdevicemediainfo">EFI_PEI_RECOVERY_BLOCK_IO_PPI.GetBlockDeviceMediaInfo()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io2-ppi">EFI_PEI_RECOVERY_BLOCK_IO2_PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io2-ppi-getnumberofblockdevices">EFI_PEI_RECOVERY_BLOCK_IO2_PPI.GetNumberOfBlockDevices()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io2-ppi-getblockdevicemediainfo">EFI_PEI_RECOVERY_BLOCK_IO2_PPI.GetBlockDeviceMediaInfo()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-recovery-block-io2-ppi-readblocks">EFI_PEI_RECOVERY_BLOCK_IO2_PPI.ReadBlocks()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-vector-handoff-info-ppi-optional">EFI_PEI_VECTOR_HANDOFF_INFO_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-optional">EFI_PEI_CPU_IO_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-mem">EFI_PEI_CPU_IO_PPI.Mem()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-io">EFI_PEI_CPU_IO_PPI.Io()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-ioread8">EFI_PEI_CPU_IO_PPI.IoRead8()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-ioread16">EFI_PEI_CPU_IO_PPI.IoRead16()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-ioread32">EFI_PEI_CPU_IO_PPI.IoRead32()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-ioread64">EFI_PEI_CPU_IO_PPI.IoRead64()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-iowrite8">EFI_PEI_CPU_IO_PPI.IoWrite8()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-iowrite16">EFI_PEI_CPU_IO_PPI.IoWrite16()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-iowrite32">EFI_PEI_CPU_IO_PPI.IoWrite32()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-iowrite64">EFI_PEI_CPU_IO_PPI.IoWrite64()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memread8">EFI_PEI_CPU_IO_PPI.MemRead8()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memread16">EFI_PEI_CPU_IO_PPI.MemRead16()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memread32">EFI_PEI_CPU_IO_PPI.MemRead32()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memread64">EFI_PEI_CPU_IO_PPI.MemRead64()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memwrite8">EFI_PEI_CPU_IO_PPI.MemWrite8()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memwrite16">EFI_PEI_CPU_IO_PPI.MemWrite16()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memwrite32">EFI_PEI_CPU_IO_PPI.MemWrite32()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-cpu-io-ppi-memwrite64">EFI_PEI_CPU_IO_PPI.MemWrite64()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-capsule-ppi-optional">EFI_PEI_CAPSULE_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-capsule-ppi-coalesce">EFI_PEI_CAPSULE_PPI.Coalesce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-capsule-check-capsule-udpate-checkcapsuleupdat-e">EFI_PEI_CAPSULE_CHECK_CAPSULE_UDPATE.CheckCapsuleUpdat e()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-capsule-check-capsule-udpate-capsulecreatestate">EFI_PEI_CAPSULE_CHECK_CAPSULE_UDPATE.CapsuleCreateState(</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi">8.3.9 EFI MP Services PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi-optional">EFI_MP_SERVICES_PPI (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi-getprocessorinfo">EFI_MP_SERVICES_PPI.GetProcessorInfo()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi-startupallaps">EFI_MP_SERVICES_PPI.StartupAllAPs ()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi-startupthisap">EFI_MP_SERVICES_PPI.StartupThisAP ()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi-switchbsp">EFI_MP_SERVICES_PPI.SwitchBSP ()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-mp-services-ppi-whoami">EFI_MP_SERVICES_PPI.WhoAmI ()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#graphics-peim-interfaces">8.4 Graphics PEIM Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#pei-graphics-ppi">8.4.1 Pei Graphics PPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#graphicsppiinit">GraphicsPpiInit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#graphicsppigetmode">GraphicsPpiGetMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-graphics-info-hob">EFI_PEI_GRAPHICS_INFO_HOB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-graphics-device-info-hob">EFI_PEI_GRAPHICS_DEVICE_INFO_HOB</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#pei-to-dxe-handoff">9 PEI to DXE Handoff</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id304">9.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#discovery-and-dispatch-of-the-dxe-foundation">9.2 Discovery and Dispatch of the DXE Foundation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#passing-the-hand-off-block-hob-list">9.3 Passing the Hand-Off Block (HOB) List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#handoff-processor-state-to-the-dxe-ipl-ppi">9.4 Handoff Processor State to the DXE IPL PPI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#boot-paths">10 Boot Paths</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id305">10.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#code-flow">10.2 Code Flow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#reset-boot-paths">10.2.1 Reset Boot Paths</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#intel-itanium-processor-reset">10.2.1.1 Intel Itanium Processor Reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#non-power-on-resets">10.2.1.2 Non-Power-on Resets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#normal-boot-paths">10.3 Normal Boot Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#basic-g0-to-s0-and-s0-variation-boot-paths">10.3.1 Basic G0-to-S0 and S0 Variation Boot Paths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#s-state-boot-paths">10.3.2 S-State Boot Paths</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#recovery-paths">10.4 Recovery Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#discovery">10.4.1 Discovery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#general-recovery-architecture">10.4.2 General Recovery Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#defined-boot-modes">10.5 Defined Boot Modes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#priority-of-boot-paths">10.6 Priority of Boot Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#assumptions">10.7 Assumptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#architectural-boot-mode-ppis">10.8 Architectural Boot Mode PPIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id326">10.9 Recovery</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#scope">10.9.1 Scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id327">10.9.2 Discovery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#id328">10.9.3 General Recovery Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#finding-and-loading-the-recovery-dxe-image">10.9.4 Finding and Loading the Recovery DXE Image</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#finding-the-recovery-dxe-image-overview">10.9.4.1 Finding the Recovery DXE Image: Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#recovery-sequence">10.9.4.2 Recovery Sequence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PI_1_7_vol1.html#recovery-ppis-recovery-module-ppi">10.9.4.3 Recovery PPIs: Recovery Module PPI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#pei-physical-memory-usage">11 PEI Physical Memory Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id331">11.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#before-permanent-memory-is-installed">11.2 Before Permanent Memory Is Installed</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#discovering-physical-memory">11.2.1 Discovering Physical Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#using-physical-memory">11.2.2 Using Physical Memory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#after-permanent-memory-is-installed">11.3 After Permanent Memory Is Installed</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#allocating-physical-memory">11.3.1 Allocating Physical Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#allocating-memory-using-guid-extension-hobs">11.3.2 Allocating Memory Using GUID Extension HOBs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#allocating-memory-using-pei-service">11.3.3 Allocating Memory Using PEI Service</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#itanium-processor-family">Itanium<sup>®</sup> Processor Family</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id334">12.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#unique-boot-paths-for-itanium-architecture">12.2 Unique Boot Paths for Itanium Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#min-state-save-area">12.3 Min-State Save Area</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#efi-pei-min-state-data">EFI_PEI_MIN_STATE_DATA</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#dispatching-itanium-processor-family-peims">12.4 Dispatching Itanium Processor Family PEIMs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#security-sec-phase-information">13 Security (SEC) Phase Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id335">13.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#responsibilities">13.2 Responsibilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#handling-all-platform-restart-events">13.2.1 Handling All Platform Restart Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#creating-a-temporary-memory-store">13.2.2 Creating a Temporary Memory Store</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#serving-as-the-root-of-trust-in-the-system">13.2.3 Serving As the Root of Trust in the System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#passing-handoff-information-to-the-pei-foundation">13.2.4 Passing Handoff Information to the PEI Foundation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#sec-platform-information-ppi">13.3 SEC Platform Information PPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#sec-hob-data-ppi">13.4 SEC HOB Data PPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#health-flag-bit-format">13.5 Health Flag Bit Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#self-test-state-parameter">13.5.1 Self-Test State Parameter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#processor-specific-details">13.6 Processor-Specific Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#sec-phase-in-ia-32-intel-architecture">13.6.1 SEC Phase in IA-32 Intel Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#sec-phase-in-the-itanium-processor-family">13.6.2 SEC Phase in the Itanium Processor Family</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#dependency-expression-grammar">14 Dependency Expression Grammar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id336">14.1 Dependency Expression Grammar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#example-dependency-expression-bnf-grammar">14.1.1 Example Dependency Expression BNF Grammar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#sample-dependency-expressions">14.1.2 Sample Dependency Expressions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#te-image">15 TE Image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id337">15.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pe32-headers">15.2 PE32 Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PI_1_7_vol1.html#te-header">TE Header</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#te-image-creation">16 TE Image Creation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#te-image-utility-requirements">16.2 TE Image Utility Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#te-image-relocations">16.3 TE Image Relocations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PI_1_7_vol1.html#te-image-loading">17 TE Image Loading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#id340">17.1 Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#xip-images">17.2 XIP Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#relocated-images">17.3 Relocated Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_1_7_vol1.html#pic-images">17.4 PIC Images</a></li>
+</ul>
+</li>
 </ul>
 
             

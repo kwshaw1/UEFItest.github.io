@@ -25,3 +25,4 @@ Sections
    release_notes.rst
    howtos/index.rst
    contribute/index.rst
+   PI_1_7_vol1.rst
